@@ -1,25 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Purple Admin</title>
+    <title>Title</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="../../static/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="../../static/vendors/css/vendor.bundle.base.css">
-    <link rel="stylesheet" href="../../static/css/style.css">
-    <link rel="stylesheet" href="../../static/css/index.css">
+    <link rel="stylesheet" href="{% static 'vendors/mdi/css/materialdesignicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/css/vendor.bundle.base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %} ">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="../../static/images/favicon.ico"/>
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}"/>
 </head>
 <body>
 <div class="container-scroller">
     <!-- top nav -->
     <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-            <a class="navbar-brand brand-logo" href="index.html"><img src="../../static/images/book-large.svg" alt="logo"/></a>
-            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="../../static/images/book.svg" alt="logo"/></a>
+            <a class="navbar-brand brand-logo" href=""><img src="{% static 'images/book-large.svg' %}" alt="logo"/></a>
+            <a class="navbar-brand brand-logo-mini" href=""><img src="{% static 'images/book.svg' %}" alt="logo"/></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -34,7 +35,7 @@
                 <li class="nav-item nav-profile dropdown">
                     <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="nav-profile-img">
-                            <img src="../../static/images/faces/face1.jpg" alt="image">
+                            <img src="{% static 'images/faces/face1.jpg' %}" alt="image">
                             <span class="availability-status online"></span>
                         </div>
                         <div class="nav-profile-text">
@@ -100,7 +101,7 @@
                     <div class="col-md-4 stretch-card grid-margin">
                         <div class="card bg-gradient-danger card-img-holder text-white">
                             <div class="card-body">
-                                <img src="../../static/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image"/>
+                                <img src="{% static 'images/dashboard/circle.svg' %}" class="card-img-absolute" alt="circle-image"/>
                                 <h4 class="font-weight-normal mb-3">本日借阅量 <i class="mdi mdi-chart-line mdi-24px float-right"></i>
                                 </h4>
                                 <h2 class="mb-5">10 本</h2>
@@ -110,7 +111,7 @@
                     <div class="col-md-4 stretch-card grid-margin">
                         <div class="card bg-gradient-info card-img-holder text-white">
                             <div class="card-body">
-                                <img src="../../static/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image"/>
+                                <img src="{% static 'images/dashboard/circle.svg' %}" class="card-img-absolute" alt="circle-image"/>
                                 <h4 class="font-weight-normal mb-3">本周借阅量 <i class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
                                 </h4>
                                 <h2 class="mb-5">234 本</h2>
@@ -120,7 +121,7 @@
                     <div class="col-md-4 stretch-card grid-margin">
                         <div class="card bg-gradient-success card-img-holder text-white">
                             <div class="card-body">
-                                <img src="../../static/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image"/>
+                                <img src="{% static 'images/dashboard/circle.svg' %}" class="card-img-absolute" alt="circle-image"/>
                                 <h4 class="font-weight-normal mb-3">累计借阅量 <i class="mdi mdi-diamond mdi-24px float-right"></i>
                                 </h4>
                                 <h2 class="mb-5">300 本</h2>
@@ -151,7 +152,7 @@
                                         <tbody>
                                         <tr>
                                             <td>
-                                                <img src="../../static/images/faces/face1.jpg" class="me-2" alt="image"> David Grey
+                                                <img src="{% static 'images/faces/face1.jpg' %}" class="me-2" alt="image"> David Grey
                                             </td>
                                             <td> Fund is not recieved</td>
                                             <td>
@@ -162,7 +163,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="../../static/images/faces/face2.jpg" class="me-2" alt="image"> Stella Johnson
+                                                <img src="{% static '/images/faces/face2.jpg' %}" class="me-2" alt="image"> Stella Johnson
                                             </td>
                                             <td> High loading time</td>
                                             <td>
@@ -170,62 +171,6 @@
                                             </td>
                                             <td> Dec 12, 2017</td>
                                             <td> WD-12346</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="../../static/images/faces/face3.jpg" class="me-2" alt="image"> Marina Michel
-                                            </td>
-                                            <td> Website down for one week</td>
-                                            <td>
-                                                <label class="badge badge-gradient-info">ON HOLD</label>
-                                            </td>
-                                            <td> Dec 16, 2017</td>
-                                            <td> WD-12347</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="../../static/images/faces/face4.jpg" class="me-2" alt="image"> John Doe
-                                            </td>
-                                            <td> Loosing control on server</td>
-                                            <td>
-                                                <label class="badge badge-gradient-danger">REJECTED</label>
-                                            </td>
-                                            <td> Dec 3, 2017</td>
-                                            <td> WD-12348</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>
-                                                <img src="../../static/images/faces/face4.jpg" class="me-2" alt="image"> John Doe
-                                            </td>
-                                            <td> Loosing control on server</td>
-                                            <td>
-                                                <label class="badge badge-gradient-danger">REJECTED</label>
-                                            </td>
-                                            <td> Dec 3, 2017</td>
-                                            <td> WD-12348</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="../../static/images/faces/face4.jpg" class="me-2" alt="image"> John Doe
-                                            </td>
-                                            <td> Loosing control on server</td>
-                                            <td>
-                                                <label class="badge badge-gradient-danger">REJECTED</label>
-                                            </td>
-                                            <td> Dec 3, 2017</td>
-                                            <td> WD-12348</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="../../static/images/faces/face4.jpg" class="me-2" alt="image"> John Doe
-                                            </td>
-                                            <td> Loosing control on server</td>
-                                            <td>
-                                                <label class="badge badge-gradient-danger">REJECTED</label>
-                                            </td>
-                                            <td> Dec 3, 2017</td>
-                                            <td> WD-12348</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -265,16 +210,16 @@
 
 </div>
 <!-- plugins:js -->
-<script src="../../static/vendors/js/vendor.bundle.base.js"></script>
+<script src="{% static 'vendors/js/vendor.bundle.base.js' %}"></script>
 <!-- Plugin js for this page -->
-<script src="../../static/vendors/chart.js/Chart.min.js"></script>
-<script src="../../static/js/jquery.cookie.js" type="text/javascript"></script>
+<script src="{% static 'vendors/chart.js/Chart.min.js' %}"></script>
+<script src="{% static 'js/jquery.cookie.js' %}" type="text/javascript"></script>
 <!-- inject:js -->
-<script src="../../static/js/off-canvas.js"></script>
-<script src="../../static/js/hoverable-collapse.js"></script>
-<script src="../../static/js/misc.js"></script>
+<script src="{% static 'js/off-canvas.js' %}"></script>
+<script src="{% static 'js/hoverable-collapse.js' %}"></script>
+<script src="{% static 'js/misc.js' %}"></script>
 <!-- Custom js for this page -->
-<script src="../../static/js/dashboard.js"></script>
-<script src="../../static/js/todolist.js"></script>
+<script src="{% static 'js/dashboard.js' %}"></script>
+<script src="{% static 'js/todolist.js' %}"></script>
 </body>
 </html>
